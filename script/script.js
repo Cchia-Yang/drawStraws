@@ -15,7 +15,7 @@ butt.onclick = function(){
     }
     var res = new Array(Number(num.value));
     for(var i=0;i<Number(num.value);i++){
-        var ranNum=Math.round(Math.random()*Number(end.value)+Number(start.value));
+        var ranNum=Math.round(Math.random()*（Number(end.value)-Number(start.value)）+Number(start.value));
         if(res.indexOf(ranNum)==-1){
             res[i]=ranNum;
         }else{
